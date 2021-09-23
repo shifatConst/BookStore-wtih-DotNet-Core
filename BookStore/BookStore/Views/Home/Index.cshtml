@@ -1,12 +1,18 @@
-﻿
-@{
-    Layout = "_Layout";
+﻿@*@{ 
+    ViewData["Title"] = "Home";
+}*@
+
+@{ 
+    var book = ViewData["Book"] as BookModel;
 }
 
 <section class="jumbotron text-center py-5">
     <div class="container">
-        <h1>WELCOME TO BOOKSTORE</h1>
+        <h1>WELCOME TO BOOKSTORE @ViewData["MyProperty"]</h1>
         <p class="lead text-muted">
+            <h1>Book Name - @book.Title</h1> <br />
+            <h1>Book Author - @book.Author</h1> <br />
+
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec ultrices tincidunt arcu non sodales neque sodales ut. Tincidunt id aliquet risus feugiat. Duis convallis convallis tellus id interdum velit laoreet id. Ac feugiat sed lectus vestibulum mattis. Et sollicitudin ac orci phasellus egestas. Auctor neque vitae tempus quam pellentesque nec nam.
         </p>
         <p>

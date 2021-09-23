@@ -1,7 +1,7 @@
 ﻿@using BookStore.Models;
 @model BookModel
 @{
-    Layout = "_Layout";
+    ViewData["Title"] = "Book deatail "+ Model.Title;
 }
 
 <div class="container">
@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-secondary">
-                       @Model.Description
+                        @Model.Description
                     </p>
                 </div>
             </div>

@@ -11,17 +11,11 @@ namespace BookStore.Controllers
     public class HomeController : Controller
     {
         [ViewData]
-        public string MyProperty { get; set; }
-        [ViewData]
         public string Title { get; set; }
 
-        [ViewData]
-        public BookModel Book{ get; set; }
         public ViewResult Index()
         {
-            MyProperty = "SHIFAT";
             Title = "Home";
-            Book = new BookModel() { Title = "System Design", Author = "Rony" };
             return View();
         }
 

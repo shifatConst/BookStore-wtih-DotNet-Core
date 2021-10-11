@@ -17,7 +17,7 @@
                         <h5 class="card-title">@book.Title</h5>
                         <small class="text-muted">@book.Author</small>
                         <p class="card-text">@book.Description</p>
-                        <a class="btn btn-outline-secondary" href="/book/getbook/@book.Id">Details</a>
+                        <a class="btn btn-outline-secondary" asp-route="bookDetailsRoute" asp-route-id="@book.Id"  >Details</a>
                     </div>
                 </div>
             </div>
